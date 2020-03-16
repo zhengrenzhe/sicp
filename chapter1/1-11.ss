@@ -19,13 +19,13 @@
             (+ (* 2 (+ a (* 2 b) (* 3 c))) (+ d (* 2 e) (* 3 f)))
     ))
     (cond ((< n 3) n)
+          ((= n 3) 4)
           ((= n 4) 11)
           ((= n 5) 25)
-          ((= n 6) 59)
-          ((> n 6) (q 8 3 1 9 5 2 6 n))
+          ((> n 5) (q 8 3 1 9 5 2 6 n))
     ))
 
-(define value 32)
+(define value 32000)
 
-(calc value) 
+; (calc value) 
 (calc2 value)
